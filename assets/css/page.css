@@ -1,0 +1,225 @@
+
+    /* Clean, gentle enhancements */
+    :root {
+      --primary-soft: #0a0b48;
+      --secondary-soft: #8b5cf6;
+      --accent-soft: #0d9a27;
+      --bg-soft: #f8fafc;
+      --card-bg: #ffffff;
+      --text-primary: #1e293b;
+      --text-secondary: #64748b;
+      --border-soft: #e2e8f0;
+      --shadow-gentle: 0 1px 3px rgba(0,0,0,0.1);
+      --shadow-card: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    body {
+      background-color: var(--bg-soft);
+      font-family: 'Heebo', 'Inter', sans-serif;
+    }
+
+    /* Hero Section - Clean & Minimal */
+    .hero-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 3rem 2rem;
+      margin: 2rem 0;
+      box-shadow: var(--shadow-card);
+      border: 1px solid var(--border-soft);
+    }
+
+    .hero-title {
+      /* color: var(--primary-soft); */
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-description {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .profile-image {
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-image:hover {
+      transform: translateY(-4px);
+    }
+
+    /* Video Section - Clean Cards */
+    .video-section {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin: 2rem 0;
+      box-shadow: var(--shadow-card);
+      border: 1px solid var(--border-soft);
+    }
+
+    .section-title {
+      color: var(--text-primary);
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      right: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--accent-soft);
+      border-radius: 2px;
+    }
+
+    /* Video Cards */
+    .video-card {
+      background: var(--bg-soft);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 1px solid var(--border-soft);
+      transition: all 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .video-title {
+      color: var(--text-primary);
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .video-thumbnail {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-gentle);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .video-thumbnail:hover {
+      transform: scale(1.02);
+    }
+
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(99, 102, 241, 0.1);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-thumbnail:hover .video-overlay {
+      opacity: 1;
+    }
+
+    .play-button {
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--primary-soft);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    /* Info Sections */
+    .info-card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-left: 3px solid var(--accent-soft);
+    }
+
+    .info-title {
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .info-title i {
+      margin-left: 0.5rem;
+      color: var(--accent-soft);
+      font-size: 1.1rem;
+    }
+
+    .info-text {
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    /* Stats Cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .stat-card {
+      background: var(--primary-soft);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .stat-number {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      opacity: 0.9;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero-card,
+      .video-section {
+        margin: 1rem;
+        padding: 2rem 1.5rem;
+      }
+      
+      .hero-title {
+        font-size: 2.2rem;
+      }
+      
+      .video-card {
+        padding: 1.5rem;
+      }
+    }
+
+
+

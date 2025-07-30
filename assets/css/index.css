@@ -141,3 +141,44 @@ body {
     height: 200px;
 
 }
+
+/* Footer */
+footer {
+    background: var(--dark-gradient) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--secondary-gradient);
+}
+
+.social-link {
+    color: var(--text-light) !important;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    margin: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    color: #ffffff !important;
+}
+
+.social-link i {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
