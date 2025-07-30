@@ -1,0 +1,143 @@
+.header-bg {
+    background-color: #70a4d7;
+}
+
+body {
+    background-color: #f8f9fa;
+    direction: rtl;
+}
+
+.layout-wrapper {
+    direction: ltr;
+    /* Flip Bootstrap layout back to LTR */
+}
+
+/* Swiper container with external navigation */
+.swiper-container-wrapper {
+    position: relative;
+    padding: 10px 10px;
+    /* Add padding for external buttons */
+}
+
+.swiper {
+    padding: 0px 0;
+}
+
+/* Set fixed width for slides */
+.swiper-slide {
+    width: 250px !important;
+    /* Force 400px width */
+    flex-shrink: 0;
+    /* Prevent shrinking */
+}
+
+.card img {
+    object-fit: cover;
+    height: 250px;
+}
+
+/* Position navigation buttons outside the swiper */
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: #007bff;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+}
+
+.swiper-button-next {
+    right: 10px;
+    /* Position outside the swiper */
+    left: auto;
+}
+
+.swiper-button-prev {
+    left: 10px;
+    /* Position outside the swiper */
+    right: auto;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .fixed-card {
+        position: sticky;
+        top: 20px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .swiper-container-wrapper {
+        padding: 30px 40px;
+    }
+
+    .swiper-slide {
+        width: 300px !important;
+        /* Smaller width on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-container-wrapper {
+        padding: 30px 20px;
+    }
+
+    .swiper-slide {
+        width: 280px !important;
+        /* Even smaller on very small screens */
+    }
+}
+
+
+
+.card-slider {
+    height: 340px;
+    /* גובה אחיד לכל כרטיס */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top-slider {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+}
+
+.card-body-slider {
+    display: flex;
+    align-items: flex-end;
+    /* שים את הכותרת בתחתית הכרטיס */
+    justify-content: center;
+    padding: 10px;
+    height: 100%;
+    /* מאפשר להתפרס על השטח שנשאר */
+    text-align: center;
+}
+
+.card-title-slider {
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.4;
+    direction: rtl;
+}
+
+.brand-img {
+    width: 200px;
+    height: 200px;
+
+}
