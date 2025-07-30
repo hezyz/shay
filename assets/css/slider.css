@@ -1,0 +1,206 @@
+/* Clean, gentle enhancements */
+:root {
+    --primary-soft: #0a0b48;
+    --secondary-soft: #8b5cf6;
+    --accent-soft: #0d9a27;
+    --bg-soft: #f8fafc;
+    --card-bg: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-soft: #e2e8f0;
+    --shadow-gentle: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    background-color: var(--bg-soft);
+    font-family: 'Heebo', 'Inter', sans-serif;
+}
+
+/* Hero Section - Clean & Minimal */
+.hero-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    margin: 2rem 0;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border-soft);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.profile-image {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: translateY(-4px);
+}
+
+/* Campaign Section - Clean Cards */
+.campaign-section {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border-soft);
+}
+
+.section-title {
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-soft);
+    border-radius: 2px;
+}
+
+/* Media Cards */
+.media-card {
+    background: var(--bg-soft);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid var(--border-soft);
+    transition: all 0.3s ease;
+}
+
+.media-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card);
+}
+
+.media-title {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.media-title i {
+    margin-left: 0.5rem;
+    color: var(--accent-soft);
+    font-size: 1.2rem;
+}
+
+/* Script Content */
+.script-content {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 3px solid var(--secondary-soft);
+    font-family: 'Courier New', monospace;
+    line-height: 1.8;
+}
+
+.character-name {
+    font-weight: 700;
+    color: var(--primary-soft);
+    margin-bottom: 0.5rem;
+}
+
+.stage-direction {
+    font-style: italic;
+    color: var(--text-secondary);
+    margin: 1rem 0;
+}
+
+.narrator {
+    background: var(--primary-soft);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Story Images */
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.story-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-gentle);
+    transition: transform 0.3s ease;
+}
+
+.story-image:hover {
+    transform: scale(1.02);
+}
+
+/* Info Sections */
+.info-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 3px solid var(--accent-soft);
+}
+
+.info-title {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.info-title i {
+    margin-left: 0.5rem;
+    color: var(--accent-soft);
+    font-size: 1.1rem;
+}
+
+.info-text {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .hero-card,
+    .campaign-section {
+        margin: 1rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .media-card {
+        padding: 1.5rem;
+    }
+}

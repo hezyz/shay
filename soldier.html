@@ -9,296 +9,217 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/theme.min.rtl.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
 </head>
 
 <body>
     <main id="content" role="main">
-        <div class="overflow-hidden">
-            <div class="container my-5">
-                <div class="d-flex align-items-center mb-4">
-                   
-                </div>
-                <div class="mb-6">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <h1 class="h2">האגף לחיילים משוחררים ומילואים</h1>
-                            <p class="lead">
+        <div class="container my-5">
+            <!-- Hero Section -->
+            <div class="hero-card">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h1 class="hero-title">האגף לחיילים משוחררים ומילואים</h1>
+                        <div class="hero-description">
+                            <p class="mb-3">
                                 קמפיין המתמקד בחיילים משוחררים שמחפשים מה לעשות אחרי השחרור מהצבא.
-
+                            </p>
+                            <p class="mb-0">
+                                הקמפיין מתמודד עם התחושות של חוסר וודאות ובלבול שחווים חיילים משוחררים, ומציע פיתרונות מעשיים דרך שירותי ייעוץ מקצועיים.
                             </p>
                         </div>
-                        <div class="col-md-4 text-end">
-                            <img class=" rounded-3" src="./assets/img/free.png" alt="Image Description" width="200"
-                                height="200">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="profile-image">
+                            <img src="./assets/img/free.png" alt="האגף לחיילים משוחררים ומילואים" class="img-fluid" width="200" height="200">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campaign Content Section -->
+            <div class="campaign-section">
+                <h1 class="section-title">תוכן הקמפיין</h1>
+                
+                <!-- TV Campaign -->
+                <div class="media-card">
+                    <h2 class="media-title">
+                        <i class="bi bi-tv"></i>
+                        טלוויזיה
+                    </h2>
+                    
+                    <div class="info-card">
+                        <h3 class="info-title">
+                            <i class="bi bi-lightbulb"></i>
+                            רעיון יצירתי
+                        </h3>
+                        <p class="info-text">cool down / הכוונה קרה - דיאלוג יצירתי בין חייל משוחרר למקרר המשמש כיעוץ לא שגרתי</p>
+                    </div>
+
+                    <div class="script-content">
+                        <div class="stage-direction">
+                            דני בן 22. הוא לובש חולצת סוף מסלול, יש לו שיער ארוך וזקן לא מסודר.
+                            רואים אותו פותח וסוגר את המקרר כמה פעמים. הוא נראה קצת מוטרד.
+                        </div>
+
+                        <div class="character-name">מקרר:</div>
+                        <div class="stage-direction">(קול של אלי פיניש)</div>
+                        <p>הלו, תגיד לי מה נסגר איתך.</p>
+
+                        <div class="stage-direction">דני נראה מבולבל</div>
+
+                        <div class="character-name">מקרר:</div>
+                        <p>יאללה, פותח סוגר פותח סוגר. חאלס כבר, תחליט. זה לא כזה קשה.</p>
+
+                        <div class="character-name">בחור:</div>
+                        <div class="stage-direction">(מוריד את הראש)</div>
+                        <p>סורי אחי אני מה זה הפוך.</p>
+
+                        <div class="character-name">מקרר:</div>
+                        <p>תן לי לנחש, השתחררת.</p>
+
+                        <div class="character-name">בחור:</div>
+                        <p>מה? איך אתה יודע?</p>
+
+                        <div class="character-name">מקרר:</div>
+                        <p>מקרר עתידות אני.</p>
+
+                        <div class="stage-direction">...המשך הדיאלוג מתפתח עד לגילוי העלון...</div>
+
+                        <div class="narrator">
+                            <div class="character-name">קריין:</div>
+                            <p>משוחרר? מבולבל? הגיוני.<br>
+                            האגף לחיילים משוחררים ומילואים פה בשבילך.<br>
+                            פנה אלינו לשיחת ייעוץ חינם.</p>
+                        </div>
+
+                        <div class="character-name">מקרר:</div>
+                        <div class="stage-direction">(ברקע)</div>
+                        <p>המקפצה שלך לאזרחות!</p>
+                    </div>
+                </div>
+
+                <!-- Social Media Campaign -->
+                <div class="media-card">
+                    <h2 class="media-title">
+                        <i class="bi bi-instagram"></i>
+                        מדיה חברתית
+                    </h2>
+                    
+                    <div class="info-card">
+                        <h3 class="info-title">
+                            <i class="bi bi-graph-up"></i>
+                            אסטרטגיה
+                        </h3>
+                        <p class="info-text">רצף של חמישה סטורים עם משפיען רשת שמדגים את חוסר הוודאות של חיילים לקראת שחרור</p>
+                    </div>
+
+                    <div class="script-content">
+                        <div class="character-name">משפיען:</div>
+                        <p>שומעים, חזרתי עכשיו מישיבה עם חבר והוא שאל אותי מה אני רוצה להיות כשאני אהיה גדול.</p>
+                        <p>האמת, לא ידעתי מה להגיד לו.</p>
+                        <p>אמרתי ״להיות מאושר״ אבל זה מה זה לא משחרר אותי.</p>
+                        <p>מה הייתם אומרים?</p>
+                        
+                        <div class="info-card">
+                            <h4 class="info-title">
+                                <i class="bi bi-collection"></i>
+                                מבנה הסטורים
+                            </h4>
+                            <ul class="info-text">
+                                <li>סטורי ראשון - מאושרים (תשובה נכונה)</li>
+                                <li>סטורי שני - עשירים (תשובה נכונה)</li>
+                                <li>סטורי שלישי - מפורסמים (תשובה נכונה)</li>
+                                <li>סטורי רביעי - הסבר שאין תשובה אחת נכונה</li>
+                                <li>סטורי חמישי - הפניה לשירותי האגף</li>
+                            </ul>
                         </div>
                     </div>
 
-
-                </div>
-            </div>
-
-            <div class="container">
-
-                <div class="my-3">
-                    <h1><u>טלוויזיה</u></h1>
-                    <h2><b> cool down / הכוונה קרה :</b></h2>
-                    <p>
-                        <i>
-                            דני בן 22 . הוא לובש חולצת סוף מסלול, יש לו שיער ארוך וזקן לא
-                            מסודר.
-                            <br>
-                            רואים אותו פותח וסוגר את המקרר כמה פעמים. הוא נראה קצת
-                            מוטרד.
-                        </i>
-                        <br> <br>
-                        <b>מקרר:</b>
-                        <i>(קול של אלי פיניש)</i>
-                        הלו, תגיד לי מה נסגר איתך.
-                        <br> <br>
-                        <i>דני נראה מבולבל</i>
-                        <br> <br>
-                        <b>מקרר:</b>
-                        יאללה, פותח סוגר פותח סוגר. חאלס כבר, תחליט. זה לא
-                        כזה קשה.
-                        <br> <br>
-                        <b>בחור:</b>
-                        <i>
-                            (מוריד את הראש)
-                        </i>
-                        .סורי אחי אני מה זה הפוך
-                        <br> <br>
-                        <b>מקרר:</b>
-                        תן לי לנחש, השתחררת.
-                        <br> <br>
-                        <b>בחור:</b>
-                        מה? איך אתה יודע?
-                        <br> <br>
-                        <b>מקרר:</b>
-                        מקרר עתידות אני.
-                        <br> <br>
-                        <b>בחור:</b>
-                        אין אחי אתה לא מבין. אני רק חיכיתי לגזור חוגר...
-                        <br> <br>
-                        <b>מקרר:</b>
-                        <i>
-                            (ממלמל לעצמו בשקט)
-                        </i>
-                        הנה עוד משוחרר שחושב שאני פסיכולוג.
-                        <br> <br>
-                        <b>בחור:</b>
-                        ופתאום הכל נפל עלי. לטוס? לא לטוס?
-                        <br> <br>
-                        <b>מקרר:</b>
-                        <i>
-                            (קוטע אותו בטון חלש)
-                        </i>
-                        נשמה
-                        <br> <br>
-                        <b>בחור:</b>
-                        דרום אמריקה? מזרח?
-                        <br> <br>
-                        <b>מקרר:</b>
-                        <i>
-                            (קצת יותר חזק)
-                        </i>
-                        נשמה
-                        <br> <br>
-                        <b>בחור:</b>
-                        אולי בכלל כדאי להתחיל ללמוד?
-                        <br> <br>
-                        <b>מקרר:</b>
-                        <i>
-                            (צועק)
-                        </i>
-                        נשמה! סתום שנייה. פתח ת׳מגירה.
-                        <br> <br>
-                        <i>
-                            הבחור מסתכל עליו בשוק.
-                        </i>
-                        <br> <br>
-                        <b>מקרר:</b>
-                        תפתח נו אתה רואה שאני בא בטוב אל תחמם אותי.
-                        <br> <br>
-                        <i>
-                            הבחור פותח את המגירה ורואה עלון של האגף לחיילים
-                            משוחררים ומילואים </i>
-                        <br> <br>
-                        <b>בחור:</b>
-                        <i>
-                            (מופתע)
-                        </i>
-                        מאיפה זה הגיע לפה?
-                        <br> <br>
-                        <b>מקרר:</b>
-                        אתה מנהל שיחה עם מקרר, ומה שמפריע לך זה שיש עלון
-                        בפנים?!
-                        <br> <br>
-                        <i>
-                            הבחור מחייך. הוא מסתכל על העלון.
-                        </i>
-                        <br> <br>
-                        <b>קריין:</b>
-                        משוחרר? מבולבל? הגיוני.
-                        <br>
-                        האגף לחיילים משוחררים ומילואים פה בשבילך.
-                        <br>
-                        פנה אלינו לשיחת ייעוץ חינם.
-                        <br> <br>
-                        <b>מקרר:</b>
-                        <i>
-                            (ברקע)
-                        </i>
-                        המקפצה שלך לאזרחות!
-                        <br> <br>
-                        <b>מקרר:</b>
-                        נו אנחנו בטוב? נרגענו? יאללה סגור אותי למה יש לי גלי
-                        חום.
-                        <br> <br>
-                        <i>
-                            הבחור סוגר והתמונה נהיית חשוכה.
-                            <br>
-                            אחרי מספר שניות שוב יש אור והבחור פותח את המקרר ומושיט
-                            יד פנימה.
-                        </i>
-                        <br> <br>
-                        <b>מקרר:</b>
-                        מה אתה עושה צחוק?! מה עכשיו?
-                        <br> <br>
-                        <b>בחור:</b>
-                        מילקי מילקי...
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="container">
-
-                <div class="my-3">
-                    <h1><u>מדיה חברתית</u></h1>
-                    <p>
-                        לוקחים משפיען רשת, עדיפות לקראת שחרור או משוחרר טרי.
-                        <br>
-                        רצף של ארבעה סטורים.
-                        <br>
-                        בכל אחד מהשלושה הראושנים הוא אומר את אותו הטקסט ומוצג סקר זהה
-                        <i>.(משך כל סטורי 15 שניות)</i>
-                        <br>
-                        בכל אחד מהסטורים, התשובה הנכונה משתנה.
-                        <br>
-                        בסטורי הרביעי, המשפיען מסביר שאין תשובה אחת נכונה, אבל בעזרת האגף לחיילים משוחררים ומילואים, הוא
-                        מוצא תשובות.
-                        <br>
-                        בסטורי החמישי יש מידע על האגף.
-                        <br> <br>
-                        תסריט שלושת הסטורים הראשונים -
-                        <br>
-                    <h3><b>משפיען:</b></h3>
-                    שומעים, חזרתי עכשיו מישיבה עם חבר והוא שאל אותי מה אני רוצה להיות כשאני אהיה גדול.
-                    <br>
-                    האמת, לא ידעתי מה להגיד לו.
-                    <br>
-                    אמרתי ״להיות מאושר״ אבל זה מה זה לא משחרר אותי.
-                    <br>
-                    מה הייתם אומרים?
-                    <br>
-                    <br>
-                    מה אתם רוצים להיות כשתהיו גדולים?
-                    <br>
-                    סטורי ראשון - מאושרים (תשובה נכונה)
-                    <br>
-                    סטורי שני - עשירים (תשובה נכונה)
-                    <br>
-                    סטורי שלישי - מפורסמים (תשובה נכונה)
-                    <br>
-                    סטורי רביעי - תכלס, לא חושב שיש תשובה אחת נכונה.
-                    <br>
-                    מזל שיש את האגף לחיילים משוחררים ומילואים שפה בשביל לעזור לי למצוא תשובות.
-                    <br>
-                    סטורי חמישי - משתחררים? מתבלבלים? הגיוני.
-                    <br>
-                    פנו עכשיו לשיחת ייעוץ אצלנו, מבטיחים שנעזור לכם למצוא את החלום או לפחות את הדרך לשם.
-                    </p>
-                </div>
-            </div>
-
-            <div class="container">
-                <h3>שלושת הסטורים הראשונים:</h3>
-                <div class="row">
-                    <div class="col-md-4  mt-3 mt-md-0">
-                        <img class="img-fluid rounded-3" src="./assets/img/free1story.jpg" alt="Image Description">
+                    <div class="story-grid">
+                        <div class="story-image">
+                            <img class="img-fluid rounded-3" src="./assets/img/free1story.jpg" alt="סטורי ראשון">
+                        </div>
+                        <div class="story-image">
+                            <img class="img-fluid rounded-3" src="./assets/img/free2story.jpg" alt="סטורי שני">
+                        </div>
+                        <div class="story-image">
+                            <img class="img-fluid rounded-3" src="./assets/img/free3story.jpg" alt="סטורי שלישי">
+                        </div>
                     </div>
-                    <div class="col-md-4 mt-3 mt-md-0">
-                        <img class="img-fluid rounded-3" src="./assets/img/free2story.jpg" alt="Image Description">
+                </div>
 
+                <!-- TikTok Campaign -->
+                <div class="media-card">
+                    <h2 class="media-title">
+                        <i class="bi bi-tiktok"></i>
+                        טיקטוק
+                    </h2>
+                    
+                    <div class="info-card">
+                        <h3 class="info-title">
+                            <i class="bi bi-camera-video"></i>
+                            רעיון התוכן
+                        </h3>
+                        <p class="info-text">ריאיון רחוב עם רינה ויצמן - ראיונות עם חיילים לקראת שחרור על החלומות והתוכניות שלהם</p>
                     </div>
-                    <div class="col-md-4  mt-3 mt-md-0">
-                        <img class="img-fluid rounded-3" src="./assets/img/free3story.jpg" alt="Image Description">
+
+                    <div class="script-content">
+                        <div class="info-card">
+                            <h4 class="info-title">
+                                <i class="bi bi-question-circle"></i>
+                                שאלות הריאיון
+                            </h4>
+                            <div class="info-text">
+                                <p><strong>שאלה 1:</strong> ״מה אתה עושה בחיים?״</p>
+                                <p><em>תגובות צפויות:</em> משתחרר עוד רגע/סופר את הימים לשחרור</p>
+                                
+                                <p><strong>שאלה 2:</strong> ״מה החלום שלך?״</p>
+                                <p><em>תגובות צפויות:</em> וואלה לא יודע/יש כל מיני דברים אבל לא כל כך יודע מה לבחור/אין לי חלום/להשתחרר</p>
+                            </div>
+                        </div>
+
+                        <div class="narrator">
+                            <div class="character-name">תיאור הסרטון:</div>
+                            <p>האגף לחיילים משוחררים ומילואים פה בשביל לעזור לכם למצוא את החלום שלכם.<br>
+                            פנו אלינו לשיחת ייעוץ חינם 🚀</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-
-            <div class="container">
-
-                <div class="my-3">
-                    <h1><u>טיקטוק</u></h1>
-                    <p>
-                        רינה ויצמן (הבחורה ששואלת מה החלום שלך) תראיין חיילים שנמצאים לקראת השחרור מהצבא.
-                        <br> <br>
-                        היא תשאל אותם 2 שאלות:
-                        <br>
-                        1.״מה אתה עושה בחיים?״
-                        <br>
-                        החייל יגיב - משתחרר עוד רגע/סופר את הימים לשחרור.
-                        <br>
-                        2. ״מה החלום שלך?״
-                        <br>
-                        התגובות שלהם יהיו - וואלה לא יודע/יש כל מיני דברים אבל לא כל כך יודע מה לבחור/אין לי
-                        חלום/להשתחרר.
-                        <br> <br>
-                        בתיאור של הסרטון - האגף ולחיילים משוחררים ומילואים פה בשביל לעזור לכם למצוא את החלום שלכם.
-                        <br>
-                        פנו אלינו לשיחת ייעוץ חינם (אימוג׳י של מקפצה).
-                    </p>
-                </div>
-            </div>
-
+        </div>
     </main>
     
-   <footer class="bg-dark" dir="ltr">
-    <div class="container">
-      <div class="row align-items-center pt-8 pb-4">
-        <div class="col-md-4">
-          <h2 class="fw-medium text-white-70 mb-0">Shay Schwartz<br><span class="fw-bold text-white">Copywriter</span>
-          </h2>
+    <footer class="bg-dark" dir="ltr">
+        <div class="container">
+            <div class="row align-items-center pt-8 pb-4">
+                <div class="col-md-4">
+                    <h2 class="fw-medium text-white-70 mb-0">Shay Schwartz<br><span class="fw-bold text-white">Copywriter</span></h2>
+                </div>
+                <div class="col-md-8 text-md-end">
+                    <ul class="list-inline text-white d-flex justify-content-end flex-wrap">
+                        <li class="list-inline-item">
+                            <a href="https://www.tiktok.com/@shayshwartz1?_t=ZS-8yPRE7hu43w&_r=1" target="_blank" class="link link-light link-light-75">
+                                <i class="bi-tiktok fs-2 me-3 ms-2"></i> TikTok</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/shay-schwartz/" target="_blank" class="link link-light link-light-75">
+                                <i class="bi-linkedin fs-2 me-3 ms-2"></i>LinkedIn</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="mailto:shwartzshay@gmail.com" class="link link-light link-light-75">
+                                <i class="bi bi-envelope-at-fill fs-2 me-3 ms-2"></i>Email</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row align-items-md-center py-6">
+                <div class="col-md-auto">
+                    <p class="fs-5 text-white-70 mb-0">© copy right Shay Schwartz. 2025</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-8 text-md-end">
-          <ul class="list-inline text-white d-flex justify-content-end flex-wrap">
-            <li class="list-inline-item">
-              <a href="https://www.tiktok.com/@shayshwartz1?_t=ZS-8yPRE7hu43w&_r=1" target="_blank"
-                class="link link-light link-light-75">
-                <i class="bi-tiktok fs-2 me-3 ms-2"></i> TikTok</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/shay-schwartz/" target="_blank" class="link link-light link-light-75">
-                <i class="bi-linkedin fs-2 me-3 ms-2"></i>LinkedIn</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="mailto:shwartzshay@gmail.com" class="link link-light link-light-75">
-                <i class="bi bi-envelope-at-fill fs-2 me-3 ms-2"></i>Email</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-      <div class="row align-items-md-center py-6">
-        <div class="col-md-auto">
-          <p class="fs-5 text-white-70 mb-0">© copy right Shay Schwartz. 2025</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
     <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
